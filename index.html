@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder By Muhammad Moeed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder By Muhammad Moeed</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone :</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="profilePicture">Profile Picture</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education :</label>
+            <textarea name="education" id="education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience :</label>
+            <textarea name="experience" id="experience" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills :</label>
+            <textarea name="skills" id="skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>
+    </form>
+
+    <div id="resumeOutput" style="margin-top: 20px;">
+        <!-- Resume will be generated here -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
